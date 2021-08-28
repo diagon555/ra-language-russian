@@ -136,3 +136,4 @@ var russianMessages = {
         }
     }
 };
+export default russianMessages;
