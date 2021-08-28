@@ -2,19 +2,18 @@
   "name": "ra-language-russian",
   "version": "3.17.2",
   "description": "Russian translations for react-admin, the frontend framework for building admin applications on top of REST/GraphQL services",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "types": "esm/index.d.ts",
   "scripts": {
     "build": "yarn run build-cjs && yarn run build-esm",
     "build-cjs": "rimraf ./lib && tsc",
     "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
     "watch": "tsc --outDir esm --module es2015 --watch"
   },
-  "dependencies": {
-    "ra-core": "^3.17.2"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Klucherev/ra-language-russian.git"
+    "url": "git+https://github.com/diagon555/ra-language-russian.git"
   },
   "keywords": [
     "react",
@@ -26,5 +25,10 @@
   "bugs": {
     "url": "https://github.com/Klucherev/ra-language-russian/issues"
   },
-  "homepage": "https://github.com/Klucherev/ra-language-russian#readme"
+  "homepage": "https://github.com/Klucherev/ra-language-russian#readme",
+  "devDependencies": {
+    "ra-core": "^3.7.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.9.6"
+  }
 }

@@ -1,10 +1,26 @@
 {
     "compilerOptions": {
+        "target": "ES5",
+        "module": "CommonJS",
+        "lib": [
+            "ES2017",
+            "DOM"
+        ],
+        "noImplicitAny": false,
+        "moduleResolution": "Node",
         "outDir": "lib",
         "rootDir": "src",
+        "jsx": "react",
+        "skipLibCheck": true,
+        "allowSyntheticDefaultImports": true,
         "declaration": true,
         "declarationMap": true,
         "allowJs": false
     },
+    "exclude": [
+        "**/*.spec.ts",
+        "**/*.spec.tsx",
+        "**/*.spec.js",
+    ],
     "include": ["src"]
 }
