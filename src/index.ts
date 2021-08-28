@@ -1,4 +1,6 @@
-module.exports = {
+import { TranslationMessages } from 'ra-core';
+
+const russianMessages: TranslationMessages = {
     ra: {
         action: {
             add_filter: "Добавить фильтр",
@@ -10,6 +12,7 @@ module.exports = {
             clone: "Дублировать",
             confirm: "Подтвердить",
             create: "Создать",
+            create_item: "Создать %{item}",
             delete: "Удалить",
             edit: "Редактировать",
             export: "Экспорт",
@@ -27,6 +30,7 @@ module.exports = {
             close: "Закрыть",
             open_menu: "Открыть меню",
             close_menu: "Закрыть меню",
+            update: "Обновить",
         },
         boolean: {
             true: "Да",
@@ -72,6 +76,10 @@ module.exports = {
             bulk_delete_content:
                 "Вы уверены, что хотите удалить %{name}? |||| Вы уверены, что хотите удалить объекты, кол-вом %{smart_count} ? |||| Вы уверены, что хотите удалить объекты, кол-вом %{smart_count} ?",
             bulk_delete_title: "Удалить %{name} |||| Удалить %{smart_count} %{name} |||| Удалить %{smart_count} %{name}",
+            bulk_update_content:
+              "Вы уверены, что хотите обновить %{name}? |||| Вы уверены, что хотите обновить %{smart_count} записей?",
+            bulk_update_title:
+              "Обновление %{name} |||| Обновление %{smart_count} %{name}",
             delete_content: "Вы уверены что хотите удалить этот объект",
             delete_title: "Удалить %{name} #%{id}",
             details: "Описание",
@@ -121,7 +129,8 @@ module.exports = {
             data_provider_error: "Ошибка dataProvider, проверьте консоль",
             i18n_error: "Не удалось загрузить перевод для указанного языка",
             canceled: "Операция отменена",
-            logged_out: "Ваша сессия завершена, попробуйте переподключиться/войти снова"
+            logged_out: "Ваша сессия завершена, попробуйте переподключиться/войти снова",
+            not_authorized: "Вы не авторизованы для доступа к этому ресурсу",
         },
         validation: {
             required: "Обязательно для заполнения",

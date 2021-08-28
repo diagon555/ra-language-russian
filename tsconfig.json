@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "outDir": "lib",
+        "rootDir": "src",
+        "declaration": true,
+        "declarationMap": true,
+        "allowJs": false
+    },
+    "include": ["src"]
+}
