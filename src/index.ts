@@ -145,3 +145,5 @@ const russianMessages: TranslationMessages = {
         }
     }
 };
+
+export default russianMessages;

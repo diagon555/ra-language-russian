@@ -1,6 +1,6 @@
 {
   "name": "ra-language-russian",
-  "version": "3.17.3",
+  "version": "3.17.4",
   "description": "Russian translations for react-admin, the frontend framework for building admin applications on top of REST/GraphQL services",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/Klucherev/ra-language-russian#readme",
   "devDependencies": {
-    "ra-core": "^3.7.0",
+    "ra-core": "^3.16.0",
     "rimraf": "^3.0.2",
     "typescript": "^3.9.6"
   }
